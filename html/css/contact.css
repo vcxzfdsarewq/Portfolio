@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+html{
+   font-size: 62.5%;
+}
+ body{
+   color:#141414;
+   font-size:1.6rem;
+   /* line-height:1.8; */
+   letter-spacing: 0.05em;
+   margin: 0;
+   
+   font-family: 'Noto Serif','Noto Serif JP', serif;
+}
+img{
+   vertical-align: bottom;
+   width: 100%;
+}
+li{
+    list-style:none;
+}
+
+a{
+   text-decoration: none;
+   color:#fff;
+ }
+
+header{
+   padding: 19px 30px;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   z-index: 1;
+   transform: translateX(-50%);
+   box-sizing: border-box;
+   width: 100%;
+   transition: .3s;
+}
+
+header a{
+   color: #fff;
+   text-decoration: none;
+   /* transition: .3s; */
+   font-weight: bold;
+   font-style: italic;
+ }
+
+.header-inner{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1200px;
+   margin: 0 auto;
+ }
+
+header.fixed{
+   position: fixed;
+   background-color: #282f35;
+   padding: 30px;
+   width: 100%;
+   transition: .3s;
+}
+.site-title{
+   font-size: 2.6rem;
+ }
+ .headerUl{
+   display: flex;
+ }
+ .headerLi{
+   margin-right: 30px;
+ }
+
+.mainView{
+   /* height: 100vh;
+   min-height: 550px;
+   position: relative */
+}
+.sliter{
+   margin: 0;
+   padding: 0;
+   position: relative;
+}
+.mainView img{
+   object-fit: cover;
+   width: 100%;
+   height: 100vh;
+   height: 453px;
+}
+.brsp{
+   display: none;
+}
+.contact-copy{
+   position: absolute;
+   left: 50%;
+   top: 226px;
+   transform: translate(-50%,-50%);
+   color: #fff;
+   font-size: 6rem;
+   font-style: italic;
+}
+.contact-last{
+   position: absolute;
+   left: 5%;
+   top: 300px;
+   color: #fff;
+   opacity: 0.1;
+   font-size: 7.6rem;
+   font-weight: bold;
+}
+
+.title-section{
+   font-size: 6rem;
+   font-style: italic;
+}
+.title-section::after{
+   content: "";
+   display: inline-block;
+   background-color: #282f35;
+   height: 5px;
+   width: 200px;
+   margin-left: 30px;
+   vertical-align: middle;
+}
+.sp{
+   display: none;
+}
+.pc{
+   display: inline;
+}
+
+.contact-form{
+   width: 500px;
+   margin: 5% auto;
+}
+.contact-part{
+   margin-bottom: 20px;
+}
+.contact-title{
+   font-weight: bolder;
+}
+.contact-part span{
+   margin-left: 10px;
+   margin-right: 13px;
+}
+.contact-text{
+   width: 100%;
+}
+.contact-botton{
+   display: block;
+   width: 235px;
+   line-height: 60px;
+   margin: 0 auto 70px;
+   background-color: #f7d43f;
+   box-shadow: 0 0 6px #1b1310;
+   border-radius: 30px;
+   text-align: center;
+   color: #171717;
+   font-weight: bold;
+   text-decoration: none;
+   transition: .3s;
+}
+
+.footer{
+   height: 79px;
+   /* display: flex;
+   justify-content: center; */
+}
+.footer p{
+   font-size: 1rem;
+   text-align: center;
+   padding: 30px 0;
+}
+
+
+@media screen and (max-width:768px){
+   .headerNav{
+      display: none;
+   }
+   .brsp{
+      display: block;
+   }
+
+ 
+   .sp{
+      display: inline;
+   }
+   .pc{
+      display: none;
+   }
+   .contact-form{
+      width: 90vw;
+      margin: 5% auto;
+   }
+   .contact-last{
+      font-size: 6rem;
+   }
+
+}
