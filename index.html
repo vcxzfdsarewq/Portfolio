@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700|Noto+Serif:400,700,700i&display=swap&subset=japanese" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">  
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/slick-theme.css"> 
+    <link rel="stylesheet" href="./css/slick/slick.css">
+    <link rel="stylesheet" href="./css/slick/slick-theme.css"> 
+    <link rel="stylesheet" href="./css/common.css"> 
     <link rel="stylesheet" href="./css/style.css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>  
     <script src="./js/slick.min.js"></script>
+    <script src="./js/common.js"></script>
     <script src="./js/main.js"></script>
     <title>ポートフォリオHTML</title>
 </head>
 <body>
+    <!-- header start -->
     <header class="header">
-        <div class="header-inner">
-            <div class="site-title"><a href="index.html">Cresta Design</a></div>
-            <nav class="headerNav">
-                <ul class="headerUl">
-                    <li class="headerLi"><a href="#concept">Concept</a></li>
-                    <li class="headerLi"><a href="#works">Works</a></li>
-                    <li class="headerLi"><a href="#service">Service</a></li>
-                    <li class="headerLi"><a href="#contact">Contact</a></li>
+        <div class="header-inner content-width">
+            <div class="header-home"><a href="index.html">Cresta Design</a></div>
+            <nav class="header-nav">
+                <ul class="header-ul">
+                    <li class="header-li"><a href="#concept">Concept</a></li>
+                    <li class="header-li"><a href="#works">Works</a></li>
+                    <li class="header-li"><a href="#service">Service</a></li>
+                    <li class="header-li"><a href="#contact">Contact</a></li>
                </ul>
            </nav>
            <button class="burger-btn">
@@ -33,10 +36,11 @@
           </button>
         </div>
     </header>
-
+    <!-- header end -->
+    <!-- main visual start -->
     <section>
-        <div class="mainView">
-            <ul class="sliter">
+        <div class="main-visual">
+            <ul class="slider">
                 <li><img src="img/fv-bgi_01@2x.jpg"></li>
                 <li><img src="img/fv-bgi_02@2x.jpg"></li>
                 <li><img src="img/fv-bgi_03@2x.jpg"></li>
@@ -48,21 +52,25 @@
             </div>
         </div>
     </section>
+    <!-- main visual end -->
+    <!-- concept start -->
     <section>
-        <div class="concept-section" id="concept">
-            <h2 class="title-section title">CONCEPT</h2>
+        <div class="concept-section content-width" id="concept">
+            <h2 class="title">CONCEPT</h2>
             <p class="concept-sub">“働きたくなる空間”をデザインする<br class="sp">ことで<br class="pc">人々を幸せにする。</p>
             <div class="concept-content">
                 <p class="content-text">私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta Designだからこそできる空間デザインを提供させていただきます。</p>
                 <img src="./img/concept-image@2x.jpg">
             </div>
-            <p class="concept-last last">Our Concept</p>
+            <p class="last-title">Our Concept</p>
         </div>
     </section>
+    <!-- concept end -->
+    <!-- works start -->
     <section>
         <div class="works-section" id="works">
-            <div class="works-inner">
-                <p class="works-title title">Works</p>
+            <div class="works-inner content-width">
+                <p class="title title-right">Works</p>
                 <ul class="works-contents">
                     <li class="works-list">
                         <img src="./img/card-img01@2x.jpg">
@@ -77,36 +85,58 @@
                         <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
                     </li>
                 </ul>
-                <div class="works-botten"><a href="#">View more</a></div>
-                <p class="works-last last">Our Works</p>
+                <div id="works-more">
+                    <ul class="works-contents" >
+                        <li class="works-list">
+                            <img src="./img/card-img01@2x.jpg">
+                            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                        </li>
+                        <li class="works-list">
+                            <img src="img/card-img02@2x.jpg">
+                            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にした</p>
+                        </li>
+                        <li class="works-list">
+                            <img src="img/card-img03@2x.jpg">
+                            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+                        </li>
+                    </ul>    
+                </div>
+                <a class="botton" id="more-botten" href="javascript:void(0)">View more</a>
+                <p class="last-title last-title-left">Our Works</p>
             </div>
         </div>
     </section>
+    <!-- works end -->
+    <!-- service start -->
     <section>
         <div class="service-section" id="service">
-            <p class="serveice-title title">Service</p>
+            <p class="content-width title">Service</p>
             <ul class="service-list">
-                <li class="service-1"><a href="#">Hearing</a></li>
-                <li class="service-2"><a href="#">Planning</a></li>
-                <li class="service-3"><a href="#">Direction</a></li>
+                <li class="service-1"><a href="service.html#hearing">Hearing</a></li>
+                <li class="service-2"><a href="service.html#planning">Planning</a></li>
+                <li class="service-3"><a href="service.html#direction">Direction</a></li>
             </ul>
-            <p class="service-last last">Our Service</p>
+            <p class="content-width last-title">Our Service</p>
         </div>
     </section>
+    <!-- service end -->
+    <!-- contact start -->
     <section>
         <div class="contact-section" id="contact">
-            <div class="contact-inner">
-                <p class="contact-title title">Contact</p>
+            <div class="contact-inner content-width">
+                <p class="title title-right">Contact</p>
                 <p class="contact-contents">お気軽にご相談ください。</p>
-                <a class="contact-botton" href="contact.html">Contact</a>
-                <p class="contact-last last">Contact us</p>
+                <a class="botton" href="contact.html">Contact</a>
+                <p class="content-width last-title last-title-left">Contact us</p>
             </div>
         </div>
     </section>
-
+    <!-- contact end -->
+    <!-- footer start -->
     <footer class="footer">
         <p>&copy;cresta.design all rights reserved</p>
     </footer>
+    <!-- footer end -->
 </body>
 </html>
 
